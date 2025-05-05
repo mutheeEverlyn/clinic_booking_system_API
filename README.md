@@ -75,7 +75,7 @@ PORT=3000
 4. **Start the server:**
 
 ```bash
-node app.js
+node server.js
 ```
 
 ---
