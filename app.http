@@ -1,0 +1,101 @@
+### 🧍 Create a new patient
+POST http://localhost:3000/patients
+Content-Type: application/json
+
+{
+  "name": "Everlyn Muthoni",
+  "dob": "2004-04-02",
+  "gender": "Female",
+  "contact_info": "0700112233"
+}
+
+### 📋 Get all patients
+GET http://localhost:3000/patients
+
+###
+PUT http://localhost:3000/patients/2
+Content-Type: application/json
+
+{
+  "name": "Ignatius Kamau",
+  "dob": "2003-10-12",
+  "gender": "Male",
+  "contact_info": "+25487653232"
+}
+
+### 👨‍⚕️ Create a new doctor
+POST http://localhost:3000/doctors
+Content-Type: application/json
+
+{
+  "name": "Dr. Grace",
+  "specialty": "Dermatology",
+  "contact_info": "+25476879908"
+}
+
+### 📋 Get all doctors
+GET http://localhost:3000/doctors
+
+###
+PUT http://localhost:3000/doctors/2
+Content-Type: application/json
+
+{
+  "name": "Dr. Evah",
+  "specialty":"Dermatologist",
+  "contact_info": "+25487623234"
+}
+### 💊 Create a new treatment
+POST http://localhost:3000/treatments
+Content-Type: application/json
+
+{
+  "name": "Acne Therapy",
+  "description": "Topical medication and lifestyle adjustment"
+}
+
+### 📋 Get all treatments
+GET http://localhost:3000/treatments
+
+
+### 📅 Schedule an appointment
+POST http://localhost:3000/appointments
+Content-Type: application/json
+
+{
+  "patient_id": 1,
+  "doctor_id": 1,
+  "appointment_date": "2025-05-10 15:00:00",
+  "status":"Scheduled"
+}
+
+### 📋 Get all appointments
+GET http://localhost:3000/appointments
+
+
+### 🔗 Link a treatment to an appointment
+POST http://localhost:3000/appointment-treatments
+Content-Type: application/json
+
+{
+  "appointment_id": 1,
+  "treatment_id": 1
+}
+
+### 📋 Get all appointment-treatments
+GET http://localhost:3000/appointment-treatments
+
+
+### 🛠️ Update a patient (ID: 1)
+PUT http://localhost:3000/patients/1
+Content-Type: application/json
+
+{
+  "name": "Karen Nyambura",
+  "dob": "2002-08-19",
+  "gender": "Female",
+  "contact_info": "0711098200"
+}
+
+### 🗑️ Delete a doctor (ID: 1)
+DELETE http://localhost:3000/doctors/1
