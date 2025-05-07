@@ -42,7 +42,7 @@ clinic_booking_system/
 │   ├── treatments.js        # Treatment routes
 │   └── appointmentTreatments.js # Links treatments to appointments
 │
-└── README.md                # This file
+└── README.md                
 ```
 
 ---
