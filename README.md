@@ -42,7 +42,7 @@ clinic_booking_system/
 │   ├── treatments.js        # Treatment routes
 │   └── appointmentTreatments.js # Links treatments to appointments
 │
-└── README.md                # This file
+└── README.md                
 ```
 
 ---
@@ -75,7 +75,7 @@ PORT=3000
 4. **Start the server:**
 
 ```bash
-node app.js
+node server.js
 ```
 
 ---
