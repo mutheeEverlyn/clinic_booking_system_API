@@ -66,7 +66,7 @@ pnpm install
 
 ```
 DB_HOST=localhost
-DB_USER=your_mysql_user
+DB_USER=your_mysql_user eg root
 DB_PASSWORD=your_mysql_password
 DB_NAME=clinic_booking_system
 PORT=3000
